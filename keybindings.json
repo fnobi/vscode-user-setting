@@ -1,0 +1,79 @@
+[
+  // 既定値を上書きするには、このファイル内にキー バインドを挿入します
+  {
+    "key": "ctrl+-",
+    "command": "undo",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+x ctrl+f",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "ctrl+x f",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+i",
+    "command": "editor.action.reindentlines"
+  },
+  { "key": "ctrl+x k", "command": "workbench.action.closeActiveEditor" },
+  { "key": "cmd+\\", "command": "workbench.action.toggleSidebarVisibility" },
+  {
+    "key": "ctrl+x g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+x shift+;",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
+  },
+  {
+    "key": "down",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "up",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "right",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "left",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "shift+alt+cmd+right",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "-workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "shift+alt+cmd+left",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "alt+cmd+left",
+    "command": "-workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "workbench.action.createTerminalEditor"
+  }
+]
